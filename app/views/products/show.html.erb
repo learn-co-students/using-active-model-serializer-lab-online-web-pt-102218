@@ -3,6 +3,7 @@
 <p class="productInventory"><%= @product.inventory %></p>
 <p class="productPrice"><%= @product.price %></p>
 <p class="productDescription"><%= @product.description %></p>
+<p class="productCreatedAt"><%= @product.created_at %></p>
 
 <script type="text/javascript" charset="utf-8">
 $(function () {
@@ -15,6 +16,7 @@ $(function () {
       $(".productPrice").text(product["price"]);
       $(".productDescription").text(product["description"]);
       $(".productInventory").text(product["inventory"]);
+      $(".productCreatedAt").text(product["created_at"]);
       // re-set the id to current on the link
       $(".js-next").attr("data-id", product["id"]);
     });
